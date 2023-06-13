@@ -12,9 +12,10 @@
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "isolatedModules": true,
-        "noUnusedLocals": true,
         "jsx": "preserve",
-        "incremental": true
+        "incremental": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules"]
