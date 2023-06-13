@@ -82,7 +82,7 @@ const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onCle
                                 </div>
                                 <div
                                     className="w-4/5 mx-auto mt-12 text-gray-900 bg-white border border-gray-200 p-4 rounded-md shadow-sm flex items-center justify-center">
-                                    <span className="text-lg font-normal text-gray-200">意见反馈请加微信“unique3412”</span>
+                                    <span className="text-medium font-normal">意见反馈请加微信“unique3412”</span>
                                 </div>
                             </div>
                         ))}
@@ -91,7 +91,7 @@ const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onCle
                 ) : (
                     <div
                         className="w-4/5 mx-auto mt-12 text-gray-900 bg-white border border-gray-200 p-4 rounded-md shadow-sm flex items-center justify-center">
-                        <span className="text-lg font-normal text-gray-200">尚未生成</span>
+                        <span className="text-lg font-normal">尚未生成</span>
                     </div>
 
 
