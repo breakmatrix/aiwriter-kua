@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from "react";
-import Card, {CardProps} from "./Card";
+import {CardProps} from "./Card";
 import CategoriesList from "./CategoryList";
 import DropDown from "../components/DropDown";
 import TemplatePage from "../pages/templates/[id]";
