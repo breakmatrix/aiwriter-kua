@@ -44,7 +44,7 @@ const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onCle
                     <button
                         className="relative transition-all duration-150 before:transition-all before:duration-150 before:absolute before:inset-0 whitespace-nowrap py-2 px-3 text-xs font-medium before:bg-gray-100 before:rounded-lg before:scale-100 before:opacity-100 text-blue-700">
             <span className="relative">
-              生成的提示词（点击拷贝）{" "}
+              生成的提示词（点击下方整个区块可复制提示词）{" "}
                 <span className="px-2 py-1 ml-2 text-xs rounded-full bg-white">
                 {outputs.length}
               </span>
