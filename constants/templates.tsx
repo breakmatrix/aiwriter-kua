@@ -1,6 +1,7 @@
 export type TemplateInput = {
     id: string;
     label: string;
+    cnlabel: string;
     placeholder: string;
     type: "text" | "textarea" | "select";
     options?: string[];
@@ -23,23 +24,26 @@ export const TEMPLATES: Template[] = [
         "description": "Create compelling product descriptions for Amazon listings.",
         "command": "Create compelling product descriptions for Amazon listings.",
         "icon": `<i class="fab fa-aws text-primary"></i>`,
-        "categories": ["social-media"],
+        "categories": ["ecommerce"],
         inputs: [
             {
                 id: "product-name",
                 label: "Product Name",
+                cnlabel: "Product Name",
                 placeholder: "A red t-shirt",
                 type: "text",
             },
             {
                 id: "key-features",
                 label: "Key Features/Benefits",
+                cnlabel: "Product Name",
                 placeholder: "Stretching, pleasant",
                 type: "textarea",
             },
             {
                 id: "tone-of-voice",
                 label: "Tone of Voice",
+                cnlabel: "Product Name",
                 placeholder: "Select a tone. For example: Witty, Friendly, Disappointed, Polite, Creative, Professional or a known person such as Michael Jordan",
                 type: "text",
             },
@@ -56,104 +60,29 @@ export const TEMPLATES: Template[] = [
             {
                 "id": "product-name",
                 "label": "Product Name",
+                "cnlabel": "Product Name",
                 "placeholder": "EcoBoost Portable Solar Charger",
                 "type": "text"
             },
             {
                 "id": "product-info",
                 "label": "Product Info",
+                "cnlabel": "Product Name",
                 "placeholder": "EcoBoost Portable Solar Charger - Compact, Lightweight, and Waterproof - Perfect for Camping, Hiking, and Emergency Preparedness - Compatible with Smartphones, Tablets, and USB Devices",
                 "type": "textarea"
             },
             {
                 "id": "product-benefits",
                 "label": "Key Benefits/Features",
+                "cnlabel": "Product Name",
                 "placeholder": "Lightweight design. Waterproof & Durable. Fast charging. Universal compatibility. Environmentally friendly.",
                 "type": "text"
             },
             {
                 "id": "tone-of-voice",
                 "label": "Tone of Voice",
-                "placeholder": "Professional. Friendly. Funny.",
-                "type": "text"
-            }
-        ]
-    },
-
-    {
-        "id": "5df5-5b3a-d3a7-1610",
-        "title": "Blog Post Conclusion Paragraph",
-        "description": "Wrap up your blog posts with an engaging conclusion paragraph.",
-        "command": "Wrap up your blog posts with an engaging conclusion paragraph.",
-        "icon": `<i class="fas fa-fire text-primary"></i>`,
-        "categories": ["social-media"],
-        "inputs": [
-            {
-                "id": "blogPostMainPoints",
-                "label": "What are the main points or outline of your blog post?",
-                "placeholder": "The importance of time management. Tips for better time management. Benefits of effective time management.",
-                "type": "textarea"
-            },
-            {
-                "id": "cta",
-                "label": "Call to action",
-                "placeholder": "Share your time management tips with us in the comments below!",
-                "type": "text"
-            },
-            {
-                "id": "tone",
-                "label": "Tone of voice",
-                "placeholder": "Motivational",
-                "type": "text"
-            }
-        ]
-    },
-    {
-        "id": "8d27-85d1-d2bb-f6d8",
-        "title": "Blog Post Intro Paragraph",
-        "description": "Write an engaging opening paragraph for your blog post.",
-        "command": "Write an engaging opening paragraph for your blog post.",
-        "icon": `<i class="fas fa-fire text-primary"></i>`,
-        "categories": ["social-media"],
-        "inputs": [
-            {
-                "id": "blogPostTitle",
-                "label": "Blog post title",
-                "placeholder": "Creative Ways to Save Money on a Tight Budget",
-                "type": "text"
-            },
-            {
-                "id": "audience",
-                "label": "Audience",
-                "placeholder": "Young professionals, Students, Budget-conscious individuals",
-                "type": "text"
-            },
-            {
-                "id": "tone",
-                "label": "Tone of voice",
-                "placeholder": "Informative, Friendly, Encouraging",
-                "type": "text"
-            }
-        ]
-    },
-    {
-        "id": "eb38-d6a3-3b3c-d790",
-        "title": "Blog Post Outline",
-        "description": "Create lists and outlines for articles, for example for 'How to' style blog posts and articles.",
-        "command": "Create lists and outlines for an article: ",
-        "icon": `<i class="fas fa-fire text-primary"></i>`,
-        "categories": ["marketing"],
-        "inputs": [
-            {
-                "id": "title",
-                "label": "Blog post title/topic",
-                "placeholder": "Top 10 Remote Work Tools for Increased Productivity",
-                "type": "text"
-            },
-            {
-                "id": "tone",
-                "label": "Tone of voice",
-                "placeholder": "Informative, Relaxed, Helpful",
+                "cnlabel": "语气（Motivational,Informative, Friendly, Encouraging...）",
+                "placeholder": "例如：激励，信息丰富，友好，鼓励...",
                 "type": "text"
             }
         ]
@@ -161,82 +90,587 @@ export const TEMPLATES: Template[] = [
 
     {
         "id": "f4b4-4dc9-38e4-4714",
-        "title": "Blog Post Topic Ideas",
+        "title": "Blog 文章主题想法",
         "description": "Generate new blog post topics that will engage readers and rank well on Google.",
         "command": "Generate new blog post topics that will engage readers and rank well on Google.",
         "icon": `<i class="fas fa-fire text-primary"></i>`,
-        "categories": ["marketing"],
+        "categories": ["blog-writing"],
         "inputs": [
             {
                 "id": "brandName",
                 "label": "Brand name",
+                "cnlabel": "品牌名",
                 "placeholder": "Eco Warrior",
                 "type": "text"
             },
             {
                 "id": "productDescription",
                 "label": "Product description",
+                "cnlabel": "产品描述",
                 "placeholder": "Eco-friendly products for a sustainable lifestyle, including reusable bags, water bottles, and home cleaning solutions.",
                 "type": "textarea"
             },
             {
                 "id": "audience",
                 "label": "Audience",
+                "cnlabel": "目标受众",
                 "placeholder": "Eco-conscious consumers, Sustainability advocates, Homeowners",
                 "type": "text"
             },
             {
                 "id": "tone",
                 "label": "Tone of voice",
-                "placeholder": "Informative, Friendly, Encouraging",
+                "cnlabel": "语气（Motivational,Informative, Friendly, Encouraging...）",
+                "placeholder": "例如：激励，信息丰富，友好，鼓励...",
                 "type": "text"
             }
         ]
     },
     {
-        "id": "a0c6-7112-e2d8-07e9",
-        "title": "Business or Product Name",
-        "description": "Generate a winning name for your business or product.",
-        "command": "Generate a winning name for your business or product.",
-        "icon": "<i class='fas fa-lightbulb text-primary' ></i>",
-        "categories": ["marketing"],
+        "id": "eb38-d6a3-3b3c-d790",
+        "title": "Blog 文章大纲",
+        "description": "Create lists and outlines for articles, for example for 'How to' style blog posts and articles.",
+        "command": "Create lists and outlines for an article: ",
+        "icon": `<i class="fas fa-fire text-primary"></i>`,
+        "categories": ["blog-writing"],
         "inputs": [
             {
-                "id": "form-field-description",
-                "type": "textarea",
-                "label": "Tell us about your business or product",
-                "placeholder": "Innovative online marketplace connecting local service providers and customers.",
+                "id": "title",
+                "label": "Blog post title/topic",
+                "cnlabel": "文章标题/主题",
+                "placeholder": "Top 10 Remote Work Tools for Increased Productivity",
+                "type": "text"
             },
             {
-                "id": "form-field-keywords",
-                "type": "text",
-                "label": "Keywords to include",
-                "placeholder": "ninja",
+                "id": "tone",
+                "label": "Tone of voice",
+                "cnlabel": "语气（Motivational,Informative, Friendly, Encouraging...）",
+                "placeholder": "例如：激励，信息丰富，友好，鼓励...",
+                "type": "text"
             }
         ]
     },
     {
+        "id": "8d27-85d1-d2bb-f6d8",
+        "title": "Blog 文章开头介绍段落",
+        "description": "Write an engaging opening paragraph for your blog post.",
+        "command": "Write an engaging opening paragraph for your blog post.",
+        "icon": `<i class="fas fa-fire text-primary"></i>`,
+        "categories": ["blog-writing"],
+        "inputs": [
+            {
+                "id": "blogPostTitle",
+                "label": "Blog post title",
+                "cnlabel": "文章标题",
+                "placeholder": "Creative Ways to Save Money on a Tight Budget",
+                "type": "text"
+            },
+            {
+                "id": "audience",
+                "label": "Audience",
+                "cnlabel": "受众",
+                "placeholder": "Young professionals, Students, Budget-conscious individuals",
+                "type": "text"
+            },
+            {
+                "id": "tone",
+                "label": "Tone of voice",
+                "cnlabel": "语气（Motivational,Informative, Friendly, Encouraging...）",
+                "placeholder": "例如：激励，信息丰富，友好，鼓励...",
+                "type": "text"
+            }
+        ]
+    },
+    
+    {
+        "id": "5df5-5b3a-d3a7-1610",
+        "title": "Blog 文章结束段落",
+        "description": "Wrap up your blog posts with an engaging conclusion paragraph.",
+        "command": "Wrap up your blog posts with an engaging conclusion paragraph.",
+        "icon": `<i class="fas fa-fire text-primary"></i>`,
+        "categories": ["blog-writing"],
+        "inputs": [
+            {
+                "id": "blogPostMainPoints",
+                "label": "main points or outline",
+                "cnlabel": "文章要点或大纲",
+                "placeholder": "例如：The importance of time management. Tips for better time management. Benefits of effective time management.",
+                "type": "textarea"
+            },
+            {
+                "id": "cta",
+                "label": "Call to action",
+                "cnlabel": "号召行动",
+                "placeholder": "例如：Share your time management tips with us in the comments below!",
+                "type": "text"
+            },
+            {
+                "id": "tone",
+                "label": "Tone of voice",
+                "cnlabel": "语气（Motivational,Informative, Friendly, Encouraging...）",
+                "placeholder": "例如：激励，信息丰富，友好，鼓励...",
+                "type": "text"
+            }
+        ]
+    },
+    
+    
+    {
         "id": "ab91-6218-4ed4-4374",
-        "title": "Commands",
-        "description": "Tell Jema.ai exactly what to write with a command.",
-        "command": "Please do the following: ",
+        "title": "创建完整的目标客户档案",
+        "description": "创建完整的目标客户档案，准确定位目标消费群体",
+        "command": "Create a comprehensive profile of my ideal customer, including demographic information, psychographic characteristics, and purchase behavior, that will help me identify and target the right people for my product.",
         "icon": "<i class='fas fa-terminal  text-primary'></i>",
-        "categories": ["marketing"],
+        "categories": ["audience"],
         "inputs": [
             {
                 "id": "form-field-command",
                 "type": "textarea",
-                "label": "Your command",
-                "placeholder": "Write a creative story about Tobby flying to the moon in Matthew McConaughey's tone of voice",
-            },
-            {
-                "id": "form-field-content",
-                "type": "textarea",
-                "label": "Background information",
-                "placeholder": "Tobby was a happy dog that loved to sneak around eating people's food",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
             }
         ]
     },
+    {
+        "id": "a0c6-7112-e2d8-07e1",
+        "title": "建立详细的买家人设",
+        "description": "建立详细的买家人设，优化营销策略",
+        "command": "Develop a detailed buyer persona for my product that outlines the needs, interests, and challenges of my target audience, and use this to create more effective marketing campaigns.",
+        "icon": "<i class='fas fa-lightbulb text-primary' ></i>",
+        "categories": ["audience"],
+        "inputs": [
+            {
+                "id": "form-field-description",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            }
+        ]
+    },
+    {
+        "id": "a0c6-7112-e2d8-07e2",
+        "title": "分析市场并明确潜在客户群体",
+        "description": "分析市场并明确潜在客户群体，制定策略吸引目标受众",
+        "command": "Analyze the market and identify potential customer segments that are most likely to be interested in my product, and develop strategies to reach and engage them.",
+        "icon": "<i class='fas fa-lightbulb text-primary' ></i>",
+        "categories": ["audience"],
+        "inputs": [
+            {
+                "id": "form-field-description",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            }
+        ]
+    },
+    {
+        "id": "a0c6-7112-e2d8-07e3",
+        "title": "找出目标市场的核心影响者",
+        "description": "找出目标市场的核心影响者，制定计划提高产品威望度",
+        "command": "Identify the key influencers in my target market and create a plan to leverage their reach and influence to drive more qualified leads to my product.",
+        "icon": "<i class='fas fa-lightbulb text-primary' ></i>",
+        "categories": ["audience"],
+        "inputs": [
+            {
+                "id": "form-field-description",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            }
+        ]
+    },
+    
+    {
+        "id": "a0c6-7112-e2d8-07e4",
+        "title": "分析竞争",
+        "description": "分析竞争，寻找产品服务的差异化元素，更有效的营销推广",
+        "command": "Analyze the competition and identify opportunities to differentiate my product from the rest of the market, and use this to create more effective marketing campaigns.",
+        "icon": "<i class='fas fa-lightbulb text-primary' ></i>",
+        "categories": ["audience"],
+        "inputs": [
+            {
+                "id": "form-field-description",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            }
+        ]
+    },
+
+    {
+        "id": "ab91-6218-4ed4-4161",
+        "title": "有效制造新品期待感",
+        "description": "",
+        "command": "Our PRODUCT is launching soon, and we need to send an email campaign to our TARGET AUDIENCE to create buzz and anticipation. Can you help me write an engaging subject line that stands out in their inbox and a message that highlights the UNIQUE FEATURE/BENEFIT and creates a sense of urgency? ",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["email"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "Our PRODUCT",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "TARGET AUDIENCE",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            },
+            {
+                "id": "form-field-feature",
+                "type": "textarea",
+                "label": "UNIQUE FEATURE/BENEFIT",
+                "cnlabel": "独特卖点/好处",
+                "placeholder": "详细的独特卖点/好处",
+            },
+            {
+                "id": "form-field-voice",
+                "type": "textarea",
+                "label": "brand voice",
+                "cnlabel": "品牌声音:PROFESSIONAL/FRIENDLY/CASUA",
+                "placeholder": "例如：专业/友好/休闲",
+            },
+            {
+                "id": "form-field-convey",
+                "type": "textarea",
+                "label": "we want to convey",
+                "cnlabel": "我们想传递：TRUST/ENTHUSIASM/INNOVATION",
+                "placeholder": "例如：信任/热情/创新",
+            }
+        ]
+    },
+    {
+        "id": "ab91-6218-4ed4-4262",
+        "title": "创造销售主题，提高转化率",
+        "description": "",
+        "command": "We're planning to run a PROMOTIONAL sale, and we need to send a series of emails to our TARGETED email list. Can you suggest a theme for each email (e.g., gift ideas, discount codes, limited-time offers) and write compelling copy that persuades them to BUY? We want to include URGENCY elements in the emails to increase conversions.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["email"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            }
+        ]
+    },
+    {
+        "id": "ab91-6218-4ed4-4563",
+        "title": "重建客户联系，撰写留存宣传文案",
+        "description": "",
+        "command": "We've noticed that some of our email subscribers haven't engaged with our recent newsletters, and we want to send a re-engagement email to win them back. Can you suggest a creative subject line that grabs their attention and a message that addresses their PAIN POINTS? We want to offer INCENTIVES to encourage them to open and click on the email.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["email"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            }
+        ]
+    },
+
+
+    {
+        "id": "ab91-6218-4ed4-5364",
+        "title": "建立信任，实现目标行动",
+        "description": "",
+        "command": "Write an email sequence that will engage and nurture my target persona and establish trust and credibility in my product, leading them to take desired action.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["lead-nurturing"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            }
+        ]
+    },
+    {
+        "id": "ab91-6218-4ed4-5365",
+        "title": "教育受众，提供说服证据，促动转化",
+        "description": "",
+        "command": "Create an email sequence that educates my target persona on the value of my product and encourages them to take action by providing compelling evidence and persuasive language.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["lead-nurturing"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            }
+        ]
+    },
+    {
+        "id": "ab91-6218-4ed4-5366",
+        "title": "利用故事、社会证明和紧迫感，促动转化",
+        "description": "",
+        "command": "Write an email sequence that utilizes storytelling, social proof, and a sense of urgency to motivate my target persona to take action and purchase my product.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["lead-nurturing"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            }
+        ]
+    },     
+    {
+        "id": "ab91-6218-4ed4-6364",
+        "title": "突出产品独特优势，引导受众实现目标",
+        "description": "",
+        "command": "Craft an email sequence that builds a strong connection with my target persona by highlighting the unique benefits of my product and how it can help them achieve their goals.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["lead-nurturing"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            }
+        ]
+    },
+    {
+        "id": "ab91-6218-4ed4-6365",
+        "title": "展示成功案例，提供行动指引",
+        "description": "",
+        "command": "Design an email sequence that showcases the success stories of similar target persona who have used my product to overcome pain point, and encourages them to take action now.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["lead-nurturing"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            },
+            {
+                "id": "form-field-pain",
+                "type": "textarea",
+                "label": "pain point",
+                "cnlabel": "痛点",
+                "placeholder": "pain point",
+            }
+        ]
+    },                
+
+
+    {
+        "id": "ab91-6218-4ed4-4311",
+        "title": "突出产品独特特性和优点",
+        "description": "编写介绍邮件，突出产品独特特性和优点，明确目标人群的行动指引",
+        "command": "Write an email that introduces my product to the market, emphasizing its unique features and benefits, and providing a clear call to action for my target persona.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["product-launch"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "my target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            }
+        ]
+    },
+    {
+        "id": "ab91-6218-4ed4-4312",
+        "title": "阐述产品服务的价值",
+        "description": "撰写邮件，阐述产品服务的价值，提供购买动力，营造紧迫感和兴奋感",
+        "command": "Develop an email copy that outlines the value proposition of my product, provides a compelling reason to buy, and leaves the target persona with a sense of urgency and excitement.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["product-launch"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            }
+        ]
+    },
+    {
+        "id": "ab91-6218-4ed4-4313",
+        "title": "利用故事叙述、社会证明、辩解力等技巧",
+        "description": "利用故事叙述、社会证明、辩解力等技巧，编写邮件吸引受众并引起行动",
+        "command": "Write an email that leverages the power of storytelling, social proof, and persuasive language to captivate my target persona and motivate them to take action.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["product-launch"],
+        "inputs": [
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            }
+        ]
+    },
+    {
+        "id": "ab91-6218-4ed4-4314",
+        "title": "用吸引眼球的主题行和邮件正文",
+        "description": "用吸引眼球的主题行和邮件正文，阐述产品特点和优势，解决目标群体痛点，鼓励行动",
+        "command": "Craft an attention-grabbing subject line and email body that explains the features and benefits of my product, addresses the target persona's pain points, and encourages them to take advantage of the offer.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["product-launch"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            }
+        ]
+    },
+    {
+        "id": "ab91-6218-4ed4-4315",
+        "title": "有说服力的邮件",
+        "description": "写出具有说服力的邮件，展示类似目标人群如何使用产品服务从痛点中走出，强调优惠的紧迫性和稀缺性",
+        "command": "Write a persuasive email that showcases the success stories of similar target persona who have used my product to overcome pain point, and emphasize the urgency and scarcity of the offer.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["product-launch"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            },
+            {
+                "id": "form-field-pain",
+                "type": "textarea",
+                "label": "pain point",
+                "cnlabel": "痛点",
+                "placeholder": "pain point",
+            }
+        ]
+    },
+    {
+        "id": "ab91-6218-4ed4-4316",
+        "title": "呈现产品独特优势",
+        "description": "呈现产品服务独特优势，提供目标受众行动步骤",
+        "command": "Develop an email copy that highlights the unique advantages of my product over the competition, and provides a clear call to action for the target persona to take advantage of the offer.",
+        "icon": "<i class='fas fa-terminal  text-primary'></i>",
+        "categories": ["product-launch"],
+        "inputs": [
+            {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-persona",
+                "type": "textarea",
+                "label": "target persona",
+                "cnlabel": "目标人群画像",
+                "placeholder": "目标人群画像",
+            },
+        ]
+    },          
+
     {
         "id": "2f67-d52f-fc58-383d",
         "title": "Creative Story",
@@ -249,12 +683,14 @@ export const TEMPLATES: Template[] = [
                 "id": "storyPlot",
                 "type": "textarea",
                 "label": "Plot",
+                "cnlabel": "Product Name",
                 "placeholder": "A magical kingdom faces a drought that threatens its existence. The king sends a brave knight on a quest to find a legendary water source.",
             },
             {
                 "id": "tone",
                 "type": "text",
                 "label": "Tone of voice",
+                "cnlabel": "Product Name",
                 "placeholder": "Whimsical",
             }
         ]
@@ -271,18 +707,21 @@ export const TEMPLATES: Template[] = [
                 "id": "companyName",
                 "type": "text",
                 "label": "Company/Product Name",
+                "cnlabel": "Product Name",
                 "placeholder": "SmartMailer",
             },
             {
                 "id": "tone",
                 "type": "text",
                 "label": "Tone of voice",
+                "cnlabel": "Product Name",
                 "placeholder": "Friendly",
             },
             {
                 "id": "emailContent",
                 "type": "textarea",
                 "label": "What is your email about?",
+                "cnlabel": "Product Name",
                 "placeholder": "Introducing our latest online course on email marketing strategies. Early bird sign-ups get a 25% discount.",
             }
         ]
@@ -299,18 +738,21 @@ export const TEMPLATES: Template[] = [
                 "id": "companyName",
                 "type": "text",
                 "label": "Company Name",
+                "cnlabel": "Product Name",
                 "placeholder": "InnovateTech",
             },
             {
                 "id": "companyInformation",
                 "type": "textarea",
                 "label": "Company information",
+                "cnlabel": "Product Name",
                 "placeholder": "InnovateTech is a cutting-edge technology firm that specializes in developing software solutions for businesses. Founded in 2018 and based in New York City, we focus on helping companies streamline their processes and improve customer engagement.",
             },
             {
                 "id": "tone",
                 "type": "text",
                 "label": "Tone of voice",
+                "cnlabel": "Product Name",
                 "placeholder": "Professional",
             }
         ]
@@ -327,12 +769,14 @@ export const TEMPLATES: Template[] = [
                 "id": "blandContent",
                 "type": "textarea",
                 "label": "Content",
+                "cnlabel": "Product Name",
                 "placeholder": "We help agencies automate their daily tasks so they can scale better and faster with less effort.",
             },
             {
                 "id": "tone",
                 "type": "text",
                 "label": "Tone of voice",
+                "cnlabel": "Product Name",
                 "placeholder": "Funny",
             }
         ]
@@ -349,18 +793,21 @@ export const TEMPLATES: Template[] = [
                 "id": "companyName",
                 "type": "text",
                 "label": "Company/Product Name",
+                "cnlabel": "Product Name",
                 "placeholder": "Pushpress",
             },
             {
                 "id": "productDescription",
                 "type": "textarea",
                 "label": "Product description",
+                "cnlabel": "Product Name",
                 "placeholder": "Gym software that helps gym owners manage their gym with less stress and make more money.",
             },
             {
                 "id": "tone",
                 "type": "text",
                 "label": "Tone of voice",
+                "cnlabel": "Product Name",
                 "placeholder": "Excited",
             }
         ]

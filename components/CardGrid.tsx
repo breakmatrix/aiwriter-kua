@@ -10,14 +10,19 @@ interface Props {
 }
 
 const DEFAULT_SELECTED_TEMPLATE = new Map()
+DEFAULT_SELECTED_TEMPLATE.set("audience","ab91-6218-4ed4-4374")
+DEFAULT_SELECTED_TEMPLATE.set("email","ab91-6218-4ed4-4161")
+DEFAULT_SELECTED_TEMPLATE.set("product-launch","ab91-6218-4ed4-4311")
+DEFAULT_SELECTED_TEMPLATE.set("lead-nurturing","ab91-6218-4ed4-5364")
+DEFAULT_SELECTED_TEMPLATE.set("blog-writing","f4b4-4dc9-38e4-4714")
 DEFAULT_SELECTED_TEMPLATE.set("social-media","a6dc-0f21-c102-6c22")
 DEFAULT_SELECTED_TEMPLATE.set("marketing","eb38-d6a3-3b3c-d790")
 DEFAULT_SELECTED_TEMPLATE.set("ecommerce","3b9e-c357-63fb-f7cb")
 DEFAULT_SELECTED_TEMPLATE.set("tools","2f67-d52f-fc58-383d")
 
 const CardGrid: React.FC<Props> = ({cards}) => {
-    const [selectedCategory, setSelectedCategory] = useState("social-media");
-    const [kind, setKind] = useState<string>("a6dc-0f21-c102-6c22");
+    const [selectedCategory, setSelectedCategory] = useState("audience");
+    const [kind, setKind] = useState<string>("ab91-6218-4ed4-4374");
 
     const handleSelectCategory = (category: string) => {
         setSelectedCategory(category);

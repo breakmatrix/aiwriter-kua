@@ -6,15 +6,25 @@ interface Category {
 }
 
 const categoriesData = [
+    { id: "audience", label: "目标受众定义" },
+    { id: "email", label: "邮件营销" },
+    { id: "product-launch", label: "产品发布邮件" },
+    { id: "lead-nurturing", label: "潜在客户培养邮件" },
+    { id: "blog-writing", label: "blog写作" },
+    
+    /*{ id: "designing-ads", label: "广告设计" },
     { id: "social-media", label: "社交媒体" },
-    { id: "marketing", label: "营销广告" },
+    { id: "pr-outreach", label: "公关推广" },
+    { id: "sales-scripts", label: "销售脚本" },
+    { id: "sales-outreach", label: "销售推广" },
+
     { id: "ecommerce", label: "电商" },
-    { id: "tools", label: "工具" },
+    { id: "tools", label: "工具" },*/
 ];
 
 // @ts-ignore
 const CategoriesList = ({ onSelectedCategory }) => {
-    const [selectedCategoryId, setSelectedCategoryId] = useState("social-media");
+    const [selectedCategoryId, setSelectedCategoryId] = useState("audience");
 
     useEffect(() => {
         onSelectedCategory(selectedCategoryId);

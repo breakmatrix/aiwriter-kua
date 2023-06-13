@@ -71,9 +71,9 @@ const InputComponent: React.FC<InputComponentProps> = ({
         <div className="w-full lg:w-1/2 bg-gray-50 border-r flex flex-col">
             
             <div className="flex flex-col p-4 flex-grow">
-                {template.inputs.map((input: { id: any; label: any; placeholder?: string; type?: "text" | "textarea" | "select"; options?: string[] | undefined; }) => (
+                {template.inputs.map((input: { id: any; label: any; cnlabel: any;placeholder?: string; type?: "text" | "textarea" | "select"; options?: string[] | undefined; }) => (
                     <label htmlFor={input.id} className="block mt-4" key={input.id}>
-                        {input.label}
+                        {input.cnlabel}
                         {renderInputField(input, inputsData[input.id] || "", handleInputChange)}
                     </label>
                 ))}
@@ -84,7 +84,7 @@ const InputComponent: React.FC<InputComponentProps> = ({
                     onClick={handleClearInputs}
                     className="px-4 py-2 text-gray-600 bg-white border border-gray-200 rounded-md hover:bg-gray-100"
                 >
-                    Clear inputs
+                    清除输入
                 </button>
                 &nbsp;&nbsp;&nbsp;
                 <button
@@ -101,7 +101,7 @@ const InputComponent: React.FC<InputComponentProps> = ({
                             <div className="w-4 h-4 border-t-2 border-purple-500 border-solid rounded-full animate-spin"></div>
                         </div>
                     )}
-                    <span className={`${isLoading ? 'invisible' : ''}`}>Generate</span>
+                    <span className={`${isLoading ? 'invisible' : ''}`}>生成</span>
                 </button>
 
 

@@ -44,7 +44,7 @@ const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onCle
                     <button
                         className="relative transition-all duration-150 before:transition-all before:duration-150 before:absolute before:inset-0 whitespace-nowrap py-2 px-3 text-xs font-medium before:bg-gray-100 before:rounded-lg before:scale-100 before:opacity-100 text-blue-700">
             <span className="relative">
-              New outputs{" "}
+              生成的提示词（点击拷贝）{" "}
                 <span className="px-2 py-1 ml-2 text-xs rounded-full bg-white">
                 {outputs.length}
               </span>
@@ -57,7 +57,7 @@ const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onCle
                         onClick={onClearOutput}
                         className="relative transition-all duration-150 before:transition-all before:duration-150 before:absolute before:inset-0 px-3 py-2 text-xs font-medium leading-4 text-gray-400 hover:text-gray-600 before:bg-gray-100 before:rounded-lg before:scale-50 before:opacity-0 hover:before:scale-100 hover:before:opacity-100"
                     >
-                        <span className="relative">Clear</span>
+                        <span className="relative">清除</span>
                     </button>
                 </div>
             </div>
@@ -80,7 +80,10 @@ const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onCle
                                                             onDismiss={handleToastDismiss}/>}
 
                                 </div>
-
+                                <div
+                                    className="w-4/5 mx-auto mt-12 text-gray-900 bg-white border border-gray-200 p-4 rounded-md shadow-sm flex items-center justify-center">
+                                    <span className="text-lg font-normal text-gray-200">意见反馈请加微信“unique3412”</span>
+                                </div>
                             </div>
                         ))}
 
@@ -88,7 +91,7 @@ const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onCle
                 ) : (
                     <div
                         className="w-4/5 mx-auto mt-12 text-gray-900 bg-white border border-gray-200 p-4 rounded-md shadow-sm flex items-center justify-center">
-                        <span className="text-lg font-normal text-gray-200">No output generated yet.</span>
+                        <span className="text-lg font-normal text-gray-200">尚未生成</span>
                     </div>
 
 
