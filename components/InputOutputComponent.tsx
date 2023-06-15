@@ -32,7 +32,7 @@ const InputOutputComponent = ({template}) => {
 
         const instruction = createInstruction(template.inputs, inputsData);
         const mainGoal = template.command;
-        const content =  `You are a creative marketing expert. \n\nYour task is: "${mainGoal}".\n\nHere are the details:\n${instruction}. ` 
+        const content =  `You are a creative marketing expert. \n\nYour task is: "${mainGoal}".\n\nHere are the details:\n${instruction} ` 
         setOutput( content );
 
     };

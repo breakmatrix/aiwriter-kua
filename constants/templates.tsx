@@ -100,22 +100,22 @@ export const TEMPLATES: Template[] = [
                 "id": "brandName",
                 "label": "Brand name",
                 "cnlabel": "品牌名",
-                "placeholder": "Eco Warrior",
+                "placeholder": "品牌名",
                 "type": "text"
             },
             {
                 "id": "productDescription",
-                "label": "Product description",
-                "cnlabel": "产品描述",
-                "placeholder": "Eco-friendly products for a sustainable lifestyle, including reusable bags, water bottles, and home cleaning solutions.",
+                "label": "My product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
                 "type": "textarea"
             },
             {
                 "id": "audience",
                 "label": "Audience",
                 "cnlabel": "目标受众",
-                "placeholder": "Eco-conscious consumers, Sustainability advocates, Homeowners",
-                "type": "text"
+                "placeholder": "例如：Eco-conscious consumers, Sustainability advocates, Homeowners",
+                "type": "textarea"
             },
             {
                 "id": "tone",
@@ -129,8 +129,8 @@ export const TEMPLATES: Template[] = [
     {
         "id": "eb38-d6a3-3b3c-d790",
         "title": "Blog 文章大纲",
-        "description": "Create lists and outlines for articles, for example for 'How to' style blog posts and articles.",
-        "command": "Create lists and outlines for an article: ",
+        "description": "Create outlines for articles.",
+        "command": "Create outlines for a blog post: ",
         "icon": `<i class="fas fa-fire text-primary"></i>`,
         "categories": ["blog-writing"],
         "inputs": [
@@ -138,8 +138,53 @@ export const TEMPLATES: Template[] = [
                 "id": "title",
                 "label": "Blog post title/topic",
                 "cnlabel": "文章标题/主题",
-                "placeholder": "Top 10 Remote Work Tools for Increased Productivity",
+                "placeholder": "例如：Top 10 Remote Work Tools for Increased Productivity",
                 "type": "text"
+            },
+            {
+                "id": "audience",
+                "label": "Audience",
+                "cnlabel": "目标受众",
+                "placeholder": "例如：Eco-conscious consumers, Sustainability advocates, Homeowners",
+                "type": "textarea"
+            },
+            {
+                "id": "tone",
+                "label": "Tone of voice",
+                "cnlabel": "语气（Motivational,Informative, Friendly, Encouraging...）",
+                "placeholder": "例如：激励，信息丰富，友好，鼓励...",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "id": "eb38-d6a3-3b3c-d890",
+        "title": "Blog 文章",
+        "description": "",
+        "command": "Write an engaging and helpful blog post with a minimum of 1500 words, based on the following details.",
+        "icon": `<i class="fas fa-fire text-primary"></i>`,
+        "categories": ["blog-writing"],
+        "inputs": [
+            {
+                "id": "title",
+                "label": "Blog post title/topic",
+                "cnlabel": "文章标题/主题",
+                "placeholder": "例如：Top 10 Remote Work Tools for Increased Productivity",
+                "type": "text"
+            },
+            {
+                "id": "audience",
+                "label": "Audience",
+                "cnlabel": "目标受众",
+                "placeholder": "例如：Eco-conscious consumers, Sustainability advocates, Homeowners",
+                "type": "textarea"
+            },
+            {
+                "id": "outline",
+                "label": "outline",
+                "cnlabel": "大纲",
+                "placeholder": "大纲",
+                "type": "textarea"
             },
             {
                 "id": "tone",
@@ -162,15 +207,15 @@ export const TEMPLATES: Template[] = [
                 "id": "blogPostTitle",
                 "label": "Blog post title",
                 "cnlabel": "文章标题",
-                "placeholder": "Creative Ways to Save Money on a Tight Budget",
+                "placeholder": "例如：Creative Ways to Save Money on a Tight Budget",
                 "type": "text"
             },
             {
                 "id": "audience",
                 "label": "Audience",
-                "cnlabel": "受众",
-                "placeholder": "Young professionals, Students, Budget-conscious individuals",
-                "type": "text"
+                "cnlabel": "目标受众",
+                "placeholder": "例如：Young professionals, Students, Budget-conscious individuals",
+                "type": "textarea"
             },
             {
                 "id": "tone",
@@ -670,6 +715,105 @@ export const TEMPLATES: Template[] = [
             },
         ]
     },          
+
+
+    {
+        "id": "3b9e-c357-63fb-f7c1",
+        "title": "广告制作",
+        "description": "",
+        "command": "Create an ad that effectively communicates my product unique VALUE PROPOSITION to SPECIFIC AUDIENCE.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["designing-ads"],
+        "inputs": [
+            {
+                "id": "product-info",
+                "label": "My Product Info",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+                "type": "textarea"
+            },
+            {
+                "id": "product-benefits",
+                "label": "VALUE PROPOSITION",
+                "cnlabel": "价值主张",
+                "placeholder": "价值主张",
+                "type": "text"
+            },
+            {
+                "id": "tone-of-voice",
+                "label": "SPECIFIC AUDIENCE",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            }
+        ]
+    },
+    {
+        "id": "3b9e-c357-63fb-f7c2",
+        "title": "广告文案策划",
+        "description": "",
+        "command": "Suggest 3 variations of ad copy that speak to the SPECIFIC AUDIENCE, highlight SPECIFIC BENEFIT/FEATURE of my PRODUCT.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["designing-ads"],
+        "inputs": [
+            {
+                "id": "product-info",
+                "label": "SPECIFIC AUDIENCE",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            },            
+            {
+                "id": "product-benefits",
+                "label": "My Product",
+                "cnlabel": "产品信息",
+                "placeholder": "我的产品优势",
+                "type": "textarea"
+            },
+            {
+                "id": "tone-of-voice",
+                "label": "SPECIFIC BENEFIT/FEATURE",
+                "cnlabel": "产品优点",
+                "placeholder": "产品优点",
+                "type": "textarea"
+            }
+        ]
+    },
+    {
+        "id": "3b9e-c357-63fb-f7c3",
+        "title": "广告视觉呈现",
+        "description": "",
+        "command": "Create SPECIFIC DESIGN ELEMENTS/VISUALS to make my SOCIAL MEDIA PLATFORM ad visually appealing and encourage buying among my TARGET AUDIENCE.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["designing-ads"],
+        "inputs": [
+            {
+                "id": "product-info",
+                "label": "TARGET AUDIENCE",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            },            
+            {
+                "id": "product-benefits",
+                "label": "My Product",
+                "cnlabel": "产品信息",
+                "placeholder": "产品信息",
+                "type": "textarea"
+            },
+            {
+                "id": "tone-of-voice",
+                "label": "SOCIAL MEDIA PLATFORM",
+                "cnlabel": "社交媒体平台",
+                "placeholder": "社交媒体平台",
+                "type": "text"
+            }
+        ]
+    },
+
+
+
+
 
     {
         "id": "2f67-d52f-fc58-383d",

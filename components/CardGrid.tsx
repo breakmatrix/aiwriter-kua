@@ -15,6 +15,8 @@ DEFAULT_SELECTED_TEMPLATE.set("email","ab91-6218-4ed4-4161")
 DEFAULT_SELECTED_TEMPLATE.set("product-launch","ab91-6218-4ed4-4311")
 DEFAULT_SELECTED_TEMPLATE.set("lead-nurturing","ab91-6218-4ed4-5364")
 DEFAULT_SELECTED_TEMPLATE.set("blog-writing","f4b4-4dc9-38e4-4714")
+DEFAULT_SELECTED_TEMPLATE.set("designing-ads","3b9e-c357-63fb-f7c1")
+
 DEFAULT_SELECTED_TEMPLATE.set("social-media","a6dc-0f21-c102-6c22")
 DEFAULT_SELECTED_TEMPLATE.set("marketing","eb38-d6a3-3b3c-d790")
 DEFAULT_SELECTED_TEMPLATE.set("ecommerce","3b9e-c357-63fb-f7cb")

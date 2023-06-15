@@ -22,7 +22,7 @@ const renderInputField = (
                 className="w-full p-2 mt-2 text-gray-900 bg-white border border-gray-200 rounded-lg"
                 placeholder={input.placeholder}
                 rows={4}
-                maxLength={800}
+                maxLength={5000}
             />
         );
     } else if (input.type === "text") {
