@@ -80,10 +80,7 @@ const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onCle
                                                             onDismiss={handleToastDismiss}/>}
 
                                 </div>
-                                <div
-                                    className="w-4/5 mx-auto mt-12 text-gray-900 bg-white border border-gray-200 p-4 rounded-md shadow-sm flex items-center justify-center">
-                                    <span className="text-medium font-normal">意见反馈请加微信“unique3412”</span>
-                                </div>
+                                
                             </div>
                         ))}
 

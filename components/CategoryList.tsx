@@ -12,8 +12,8 @@ const categoriesData = [
     { id: "lead-nurturing", label: "潜在客户培养邮件" },
     { id: "blog-writing", label: "blog写作" },    
     { id: "designing-ads", label: "广告设计" },
-    /*{ id: "social-media", label: "社交媒体" },
-    { id: "pr-outreach", label: "公关推广" },
+    { id: "social-media", label: "社交媒体" },
+    /*{ id: "pr-outreach", label: "公关推广" },
     { id: "sales-scripts", label: "销售脚本" },
     { id: "sales-outreach", label: "销售推广" },
 

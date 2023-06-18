@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Footer from '../components/Footer';
 import Head from "next/head";
 import CardGrid from "../components/CardGrid";
 import {TEMPLATES} from "../constants/templates";
@@ -21,6 +22,7 @@ const HomePage: React.FC = () => {
                 创建丰富 <strong className="text-blue-600"> 营销文案提示词</strong> （以下输入框建议输入英文）
             </h2>
             <CardGrid cards={TEMPLATES}/>
+            <Footer></Footer>
         </Layout>
     );
 };

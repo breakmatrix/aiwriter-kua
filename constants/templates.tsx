@@ -18,75 +18,7 @@ export type Template = {
 };
 
 export const TEMPLATES: Template[] = [
-    {
-        "id": "a6dc-0f21-c102-6c22",
-        "title": "Amazon Product Description (paragraph)",
-        "description": "Create compelling product descriptions for Amazon listings.",
-        "command": "Create compelling product descriptions for Amazon listings.",
-        "icon": `<i class="fab fa-aws text-primary"></i>`,
-        "categories": ["ecommerce"],
-        inputs: [
-            {
-                id: "product-name",
-                label: "Product Name",
-                cnlabel: "Product Name",
-                placeholder: "A red t-shirt",
-                type: "text",
-            },
-            {
-                id: "key-features",
-                label: "Key Features/Benefits",
-                cnlabel: "Product Name",
-                placeholder: "Stretching, pleasant",
-                type: "textarea",
-            },
-            {
-                id: "tone-of-voice",
-                label: "Tone of Voice",
-                cnlabel: "Product Name",
-                placeholder: "Select a tone. For example: Witty, Friendly, Disappointed, Polite, Creative, Professional or a known person such as Michael Jordan",
-                type: "text",
-            },
-        ]
-    },
-    {
-        "id": "3b9e-c357-63fb-f7cb",
-        "title": "Amazon Product Features (bullets)",
-        "description": "Create key feature and benefit bullet points for Amazon listings under the 'about this item' section.",
-        "command": "Create key feature and benefit bullet points for Amazon listings under the 'about this item' section.",
-        "icon": `<i class="fab fa-aws text-primary"></i>`,
-        "categories": ["ecommerce"],
-        "inputs": [
-            {
-                "id": "product-name",
-                "label": "Product Name",
-                "cnlabel": "Product Name",
-                "placeholder": "EcoBoost Portable Solar Charger",
-                "type": "text"
-            },
-            {
-                "id": "product-info",
-                "label": "Product Info",
-                "cnlabel": "Product Name",
-                "placeholder": "EcoBoost Portable Solar Charger - Compact, Lightweight, and Waterproof - Perfect for Camping, Hiking, and Emergency Preparedness - Compatible with Smartphones, Tablets, and USB Devices",
-                "type": "textarea"
-            },
-            {
-                "id": "product-benefits",
-                "label": "Key Benefits/Features",
-                "cnlabel": "Product Name",
-                "placeholder": "Lightweight design. Waterproof & Durable. Fast charging. Universal compatibility. Environmentally friendly.",
-                "type": "text"
-            },
-            {
-                "id": "tone-of-voice",
-                "label": "Tone of Voice",
-                "cnlabel": "语气（Motivational,Informative, Friendly, Encouraging...）",
-                "placeholder": "例如：激励，信息丰富，友好，鼓励...",
-                "type": "text"
-            }
-        ]
-    },
+    
 
     {
         "id": "f4b4-4dc9-38e4-4714",
@@ -378,14 +310,14 @@ export const TEMPLATES: Template[] = [
             },
             {
                 "id": "form-field-voice",
-                "type": "textarea",
+                "type": "text",
                 "label": "brand voice",
-                "cnlabel": "品牌声音:PROFESSIONAL/FRIENDLY/CASUA",
+                "cnlabel": "品牌声音:PROFESSIONAL/FRIENDLY/CASUAL",
                 "placeholder": "例如：专业/友好/休闲",
             },
             {
                 "id": "form-field-convey",
-                "type": "textarea",
+                "type": "text",
                 "label": "we want to convey",
                 "cnlabel": "我们想传递：TRUST/ENTHUSIASM/INNOVATION",
                 "placeholder": "例如：信任/热情/创新",
@@ -813,147 +745,98 @@ export const TEMPLATES: Template[] = [
 
 
 
-
-
     {
         "id": "2f67-d52f-fc58-383d",
-        "title": "Creative Story",
-        "description": "Write creative stories to engage readers.",
-        "command": "Write a creative story ",
-        "icon": "<i class='fas fa-book-open text-primary'></i>",
-        "categories": [ "tools"],
+        "title": "社交媒体内容灵感",
+        "description": "",
+        "command": "Suggest 5 content ideas for specific social media platform related to specific topic that can appeal to target audience. Also, provide a brief description of each idea and how to execute it. ",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": [ "social-media"],
         "inputs": [
             {
                 "id": "storyPlot",
-                "type": "textarea",
-                "label": "Plot",
-                "cnlabel": "Product Name",
-                "placeholder": "A magical kingdom faces a drought that threatens its existence. The king sends a brave knight on a quest to find a legendary water source.",
+                "type": "text",
+                "label": "specific social media platform",
+                "cnlabel": "社媒平台（Facebook, Twitter, Instagram, TikTok）",
+                "placeholder": "社媒平台",
             },
             {
                 "id": "tone",
                 "type": "text",
-                "label": "Tone of voice",
-                "cnlabel": "Product Name",
-                "placeholder": "Whimsical",
-            }
+                "label": "topic",
+                "cnlabel": "主题",
+                "placeholder": "主题",
+            },
+            {
+                "id": "product-info",
+                "label": "target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            },  
         ]
     },
     {
         "id": "1a79-8d7e-cc88-1e61",
-        "title": "Email Subject Lines",
-        "description": "Get your emails opened with irresistible subject lines.",
-        "command": "Write Email Subject Lines. use the following : ",
-        "icon": "<i class='fas fa-envelope text-primary'></i>",
-        "categories": [ "marketing"],
+        "title": "社交媒体展示策略",
+        "description": "",
+        "command": "Suggest some innovative and eye-catching ways to showcase my product on specific social media platform that can stand out from competitors and appeal to my target audience. Provide some examples and tips to make them more effective.",
+        "icon": ``,
+        "categories": [ "social-media"],
         "inputs": [
             {
-                "id": "companyName",
+                "id": "storyPlot2",
                 "type": "text",
-                "label": "Company/Product Name",
-                "cnlabel": "Product Name",
-                "placeholder": "SmartMailer",
+                "label": "specific social media platform",
+                "cnlabel": "社媒平台（Facebook, Twitter, Instagram, TikTok）",
+                "placeholder": "社媒平台",
             },
             {
-                "id": "tone",
-                "type": "text",
-                "label": "Tone of voice",
-                "cnlabel": "Product Name",
-                "placeholder": "Friendly",
-            },
-            {
-                "id": "emailContent",
+                "id": "companyName2",
                 "type": "textarea",
-                "label": "What is your email about?",
-                "cnlabel": "Product Name",
-                "placeholder": "Introducing our latest online course on email marketing strategies. Early bird sign-ups get a 25% discount.",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },           
+            {
+                "id": "tone2",
+                "label": "my target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
             }
         ]
     },
     {
-        "id": "72e8-66f6-1009-9e54",
-        "title": "Company Bio",
+        "id": "72e8-66f6-1009-9e55",
+        "title": "引人入胜的文字描述",
         "description": "Share your company's story with a compelling bio.",
-        "command": "Create a compelling bio for the following company. ",
-        "icon": "<i class='fas fa-building text-primary'></i>",
-        "categories": ["tools"],
+        "command": "Create engaging and creative captions that capture the attention of target audience for my product on specific social media platform. Provide some examples and tips to make them more effective.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["social-media"],
         "inputs": [
             {
-                "id": "companyName",
+                "id": "storyPlot1",
                 "type": "text",
-                "label": "Company Name",
-                "cnlabel": "Product Name",
-                "placeholder": "InnovateTech",
+                "label": "specific social media platform",
+                "cnlabel": "社媒平台（Facebook, Twitter, Instagram, TikTok）",
+                "placeholder": "社媒平台",
             },
             {
-                "id": "companyInformation",
+                "id": "companyName1",
                 "type": "textarea",
-                "label": "Company information",
-                "cnlabel": "Product Name",
-                "placeholder": "InnovateTech is a cutting-edge technology firm that specializes in developing software solutions for businesses. Founded in 2018 and based in New York City, we focus on helping companies streamline their processes and improve customer engagement.",
-            },
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },           
             {
-                "id": "tone",
-                "type": "text",
-                "label": "Tone of voice",
-                "cnlabel": "Product Name",
-                "placeholder": "Professional",
+                "id": "tone1",
+                "label": "my target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
             }
         ]
-    },
-    {
-        "id": "e7b3-458e-62df-17c8",
-        "title": "Content Improver",
-        "description": "Enhance a piece of content by rewriting it to be more engaging, creative, and captivating.",
-        "command": "Rewrite the following content to be more engaging, creative, and captivating: ",
-        "icon": "<i class='fas fa-pencil-alt text-primary'></i>",
-        "categories": ["marketing"],
-        "inputs": [
-            {
-                "id": "blandContent",
-                "type": "textarea",
-                "label": "Content",
-                "cnlabel": "Product Name",
-                "placeholder": "We help agencies automate their daily tasks so they can scale better and faster with less effort.",
-            },
-            {
-                "id": "tone",
-                "type": "text",
-                "label": "Tone of voice",
-                "cnlabel": "Product Name",
-                "placeholder": "Funny",
-            }
-        ]
-    },
-    {
-        "id": "23e7-687f-0df7-1e47",
-        "title": "Facebook Ad Primary Text",
-        "description": "Craft compelling primary text for Facebook ads that attract users.",
-        "command": "Create compelling primary text for Facebook ad.",
-        "icon": "<i class='fab fa-facebook text-primary'></i>",
-        "categories": [ "social_media"],
-        "inputs": [
-            {
-                "id": "companyName",
-                "type": "text",
-                "label": "Company/Product Name",
-                "cnlabel": "Product Name",
-                "placeholder": "Pushpress",
-            },
-            {
-                "id": "productDescription",
-                "type": "textarea",
-                "label": "Product description",
-                "cnlabel": "Product Name",
-                "placeholder": "Gym software that helps gym owners manage their gym with less stress and make more money.",
-            },
-            {
-                "id": "tone",
-                "type": "text",
-                "label": "Tone of voice",
-                "cnlabel": "Product Name",
-                "placeholder": "Excited",
-            }
-        ]
-    },
+    }
+    
     ]
