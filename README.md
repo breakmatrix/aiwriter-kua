@@ -14,7 +14,7 @@
 意见反馈请加微信“unique3412”
 
 
-提示词基于 [JASPER.AI 提示词](https://www.jasper.ai/blog/ai-prompts-for-business) ，略有修改。
+提示词基于 [JASPER.AI 提示词](https://www.jasper.ai/blog/ai-prompts-for-business) ，略有修改:加上了专家角色设置；把输入框变大，方便输入更多信息，比如原来只是输入产品名，现在是产品信息。
 
 代码基于一个想取代 JASPER.AI 的开源项目:-) [Jema.ai](https://github.com/yuvalsuede/jasper-alternative-gpt) Open Source Jasper alternative
 
