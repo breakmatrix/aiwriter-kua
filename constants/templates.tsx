@@ -462,6 +462,13 @@ export const TEMPLATES: Template[] = [
                 "placeholder": "尽可能多的产品信息",
             },
             {
+                "id": "form-field-feature",
+                "type": "textarea",
+                "label": "unique benefits of my product",
+                "cnlabel": "独特卖点/好处",
+                "placeholder": "详细的独特卖点/好处",
+            },
+            {
                 "id": "form-field-persona",
                 "type": "textarea",
                 "label": "target persona",
@@ -519,6 +526,13 @@ export const TEMPLATES: Template[] = [
                 "placeholder": "尽可能多的产品信息",
             },
             {
+                "id": "form-field-feature",
+                "type": "textarea",
+                "label": "unique features and benefits",
+                "cnlabel": "独特卖点/好处",
+                "placeholder": "详细的独特卖点/好处",
+            },
+            {
                 "id": "form-field-persona",
                 "type": "textarea",
                 "label": "my target persona",
@@ -560,12 +574,20 @@ export const TEMPLATES: Template[] = [
         "categories": ["product-launch"],
         "inputs": [
             {
+                "id": "form-field-command",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
                 "id": "form-field-persona",
                 "type": "textarea",
                 "label": "target persona",
                 "cnlabel": "目标人群画像",
                 "placeholder": "目标人群画像",
-            }
+            },
+            
         ]
     },
     {
@@ -623,30 +645,7 @@ export const TEMPLATES: Template[] = [
             }
         ]
     },
-    {
-        "id": "ab91-6218-4ed4-4316",
-        "title": "呈现产品独特优势",
-        "description": "呈现产品服务独特优势，提供目标受众行动步骤",
-        "command": "Develop an email copy that highlights the unique advantages of my product over the competition, and provides a clear call to action for the target persona to take advantage of the offer.",
-        "icon": "<i class='fas fa-terminal  text-primary'></i>",
-        "categories": ["product-launch"],
-        "inputs": [
-            {
-                "id": "form-field-command",
-                "type": "textarea",
-                "label": "my product",
-                "cnlabel": "产品信息",
-                "placeholder": "尽可能多的产品信息",
-            },
-            {
-                "id": "form-field-persona",
-                "type": "textarea",
-                "label": "target persona",
-                "cnlabel": "目标人群画像",
-                "placeholder": "目标人群画像",
-            },
-        ]
-    },          
+         
 
 
     {
