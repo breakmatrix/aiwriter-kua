@@ -845,7 +845,7 @@ export const TEMPLATES: Template[] = [
         "id": "72e8-66f6-1019-9e55",
         "title": "针对目标受众的销售脚本",
         "description": "",
-        "command": "Create a sales script that targets my target audience who are interested in my product. The script should highlight the unique features and benefits of my product and include a clear call-to-action for desired outcome.",
+        "command": "Create a sales script that targets my target audience who are interested in my product. Include a clear call-to-action for desired outcome.",
         "icon": `<i class="fab fa-aws text-primary"></i>`,
         "categories": ["sales-scripts"],
         "inputs": [
