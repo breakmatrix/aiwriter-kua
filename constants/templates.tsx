@@ -836,6 +836,299 @@ export const TEMPLATES: Template[] = [
                 "type": "textarea"
             }
         ]
-    }
+    },
+
+
+
+
+    {
+        "id": "72e8-66f6-1019-9e55",
+        "title": "针对目标受众的销售脚本",
+        "description": "",
+        "command": "Create a sales script that targets my target audience who are interested in my product. The script should highlight the unique features and benefits of my product and include a clear call-to-action for desired outcome.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["sales-scripts"],
+        "inputs": [
+            {
+                "id": "storyPlot1",
+                "type": "text",
+                "label": "desired outcome",
+                "cnlabel": "期望结果",
+                "placeholder": "",
+            },
+            {
+                "id": "companyName1",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },           
+            {
+                "id": "tone1",
+                "label": "my target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            }
+        ]
+    },
+    {
+        "id": "72e8-66f6-1029-9e55",
+        "title": "强调优势的销售脚本",
+        "description": "",
+        "command": "Create a sales script that speaks directly to my target audience, emphasizing the unique benefits of my product. ",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["sales-scripts"],
+        "inputs": [
+            {
+                "id": "storyPlot1",
+                "type": "text",
+                "label": "unique benefits of my product",
+                "cnlabel": "独特卖点/好处",
+                "placeholder": "",
+            },
+            {
+                "id": "companyName1",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },           
+            {
+                "id": "tone1",
+                "label": "my target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            }
+        ]
+    },
+    {
+        "id": "72e8-66f6-1039-9e55",
+        "title": "创造紧迫感和稀缺性的销售话术",
+        "description": "",
+        "command": "Create a sense of urgency and scarcity in my sales pitch. Help me come up with some language that will encourage my target audience to buy and not miss out on my product.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["sales-scripts"],
+        "inputs": [
+            {
+                "id": "companyName1",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },           
+            {
+                "id": "tone1",
+                "label": "my target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            }
+        ]
+    }  ,
+    
+        
+    
+    {
+        "id": "72e8-66f6-1039-9e56",
+        "title": "吸引目标潜在客户的邮件",
+        "description": "",
+        "command": "Write an email that will capture the attention of my target audience and clearly explain the unique value of my product in a way that resonates with their needs and goals.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["sales-email"],
+        "inputs": [
+            {
+                "id": "companyName1",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },           
+            {
+                "id": "tone1",
+                "label": "my target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            }
+        ]
+    },
+    {
+        "id": "72e8-66f6-1039-9e57",
+        "title": "激发潜在客户行动的邮件",
+        "description": "",
+        "command": "Write an email that will inspire my target audience to take action by demonstrating the potential of my product to solve their specific problems and improve their business operations.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["sales-email"],
+        "inputs": [
+            {
+                "id": "companyName1",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },           
+            {
+                "id": "tone1",
+                "label": "my target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            }
+        ]
+    },
+    {
+        "id": "72e8-66f6-1039-9e58",
+        "title": "建立潜在客户的信任和可信度的邮件",
+        "description": "",
+        "command": "Craft an email that will build trust and credibility with my target audience by providing social proof and showcasing the success stories of similar customers who have used my product.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["sales-email"],
+        "inputs": [
+            {
+                "id": "companyName1",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },           
+            {
+                "id": "tone1",
+                "label": "my target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            }
+        ]
+    },
+    {
+        "id": "72e8-66f6-1039-9e59",
+        "title": "利用故事叙述和说服性语言引起潜在客户兴趣",
+        "description": "",
+        "command": "Write an email that will generate interest and excitement around my product by leveraging the power of storytelling and persuasive language to captivate my target audience and drive them to take action.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["sales-email"],
+        "inputs": [
+            {
+                "id": "companyName1",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },           
+            {
+                "id": "tone1",
+                "label": "my target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            }
+        ]
+    },
+
+
+
+    {
+        "id": "72e8-66f6-1039-9e66",
+        "title": "创建标题",
+        "description": "",
+        "command": "Create an engaging headline for my product. It must be short, snappy and catchy. Please provide 5 examples.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["product-page"],
+        "inputs": [
+            {
+                "id": "companyName1",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },           
+            {
+                "id": "tone1",
+                "label": "my target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            },
+            {
+                "id": "form-field-feature",
+                "type": "textarea",
+                "label": "features and benefits",
+                "cnlabel": "特性/好处",
+                "placeholder": "详细的特性/好处",
+            },
+        ]
+    },
+    {
+        "id": "72e8-66f6-1039-9e77",
+        "title": "突出特点和优点小节",
+        "description": "",
+        "command": "Write a concise and informative section that combines my product features and benefits. Please also provide suggestions for other benefits I may have missed.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["product-page"],
+        "inputs": [
+            {
+                "id": "companyName1",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },
+            {
+                "id": "form-field-feature",
+                "type": "textarea",
+                "label": "features and benefits",
+                "cnlabel": "特性/好处",
+                "placeholder": "详细的特性/好处",
+            },
+        ]
+    },
+    {
+        "id": "72e8-66f6-1039-9e88",
+        "title": "撰写产品描述",
+        "description": "",
+        "command": "Draft an engaging and value-communicating product page copy that balances product detailing, brand representation, the benefits identification, and lifestyle integration in a humanized tone.",
+        "icon": `<i class="fab fa-aws text-primary"></i>`,
+        "categories": ["product-page"],
+        "inputs": [
+            {
+                "id": "companyName1",
+                "type": "textarea",
+                "label": "my product",
+                "cnlabel": "产品信息",
+                "placeholder": "尽可能多的产品信息",
+            },           
+            {
+                "id": "tone1",
+                "label": "my target audience",
+                "cnlabel": "目标受众",
+                "placeholder": "目标受众",
+                "type": "textarea"
+            },
+            {
+                "id": "form-field-feature",
+                "type": "text",
+                "label": "brand",
+                "cnlabel": "品牌名",
+                "placeholder": "",
+            },
+            {
+                "id": "form-field-feature5",
+                "type": "text",
+                "label": "brand value",
+                "cnlabel": "品牌价值",
+                "placeholder": "",
+            },
+            {
+                "id": "form-field-feature3",
+                "type": "textarea",
+                "label": "unique features and benefits",
+                "cnlabel": "独特特性/好处",
+                "placeholder": "",
+            },
+        ]
+    },
+    
     
     ]

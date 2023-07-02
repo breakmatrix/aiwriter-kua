@@ -13,11 +13,12 @@ const categoriesData = [
     { id: "blog-writing", label: "blog写作" },    
     { id: "designing-ads", label: "广告设计" },
     { id: "social-media", label: "社交媒体" },
-    /*{ id: "pr-outreach", label: "公关推广" },
     { id: "sales-scripts", label: "销售脚本" },
-    { id: "sales-outreach", label: "销售推广" },
+    { id: "sales-email", label: "销售邮件" },
+    { id: "product-page", label: "产品页面" },
+    
 
-    { id: "ecommerce", label: "电商" },
+    /*{ id: "ecommerce", label: "电商" },
     { id: "tools", label: "工具" },*/
 ];
 
