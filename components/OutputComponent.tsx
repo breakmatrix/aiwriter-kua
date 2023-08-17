@@ -83,7 +83,7 @@ const OutputComponent: React.FC<OutputComponentProps> = ({generatedOutput, onCle
                                 
                                 <div
                                     className="w-4/5 mx-auto mt-12 text-gray-900 bg-white border border-gray-200 p-4 rounded-md shadow-sm flex items-center justify-center">
-                                    <span className="font-normal"><a target="_blank"  rel="noopener " href='https://fliki.ai/?via=kuaprompt'>AI让视频制作快速简单，节省10倍时间!</a></span>
+                                    <span className="font-normal"><a target="_blank"  rel="noopener " href='https://www.aigenprompt.com'>不用设计师，自己搞定图片创意！</a></span>
                                 </div>
 
                             </div>
